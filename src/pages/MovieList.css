@@ -1,0 +1,22 @@
+.boxoffice {
+  border: 1px;
+  border-collapse: collapse;
+}
+
+.poster {
+  width: 30%;
+}
+
+.img {
+  height: 100%;
+  width: 50%;
+}
+
+th {
+  text-align: center;
+  vertical-align: center;
+}
+
+td {
+  vertical-align: center;
+}
