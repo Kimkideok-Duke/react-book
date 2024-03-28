@@ -7,7 +7,7 @@ const Header = () => {
       <>
             <Navbar  bg="dark" variant="dark">
               <Container fluid>
-                <Link to="/home" className="navbar-brand">홈</Link>
+                <Link to="/home" className="navbar-brand">CINEMA</Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                   <Nav
@@ -15,19 +15,19 @@ const Header = () => {
                     style={{ maxHeight: '100px' }}
                     navbarScroll
                   >
-                    <Link to="/JoinForm" className="nav-link">회원가입</Link>
-                    <Link to="/" className="nav-link">로그인</Link>
-                    <Link to="/logOutForm" className="nav-link">로그아웃</Link>
-                    <Link to="/saveForm" className="nav-link">글쓰기</Link>
+                    {/* <Link to="/JoinForm" className="nav-link">회원가입</Link> */}
+                    {/* <Link to="/" className="nav-link">로그인</Link> */}
+                    {/* <Link to="/logOutForm" className="nav-link">로그아웃</Link> */}
+                    {/* <Link to="/saveForm" className="nav-link">글쓰기</Link> */}
                     <NavDropdown title="메뉴" id="navbarScrollingDropdown">
-                      <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                      <NavDropdown.Item href="#action3"><Link to="/JoinForm"> 회원가입</Link></NavDropdown.Item>
                       <NavDropdown.Item href="#action4">
-                        Another action
+                      <Link to="/">로그인</Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Divider />
+                      {/* <NavDropdown.Divider />
                       <NavDropdown.Item href="#action5">
                         Something else here
-                      </NavDropdown.Item>
+                      </NavDropdown.Item> */}
                     </NavDropdown>
                   </Nav>
                   <Form className="d-flex">
